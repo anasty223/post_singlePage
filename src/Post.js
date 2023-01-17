@@ -2,7 +2,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Typography,CardContent,CardMedia,Card, TextField} from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight,faCalendarWeek } from '@fortawesome/free-solid-svg-icons'
+import akarIcon from './images/akarIcons.svg'
 
 const Post = ({ article }) => {
 
@@ -18,10 +19,8 @@ const Post = ({ article }) => {
       <CardContent>
        
 
-        <Typography className='date' color="#363636">
-        <svg className="contacts_icon" width="18" height="18">
-            <use href="./images/symbol-defs.svg#icon-akar"></use>
-          </svg>
+        <Typography className='date' color="#363636"   >
+        <FontAwesomeIcon icon={faCalendarWeek} opacity="0.6" color="#363636"  className='iconCalendar'/>
         {article.publishedAt.split('T')[0]}
         </Typography>
 
@@ -29,7 +28,7 @@ const Post = ({ article }) => {
         {article.title}
         </Typography>
 
-        <Typography style={{marginTop:20}} className="summary" variant="body2" color="textSecondary" component="p">
+        <Typography style={{marginTop:20}} className="summary" variant="body2"  component="p">
           {article.summary}
         </Typography>
 

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation, useParams } from "react-router-dom";
-import { fetchArticleById } from "../services/api";
+import { fetchArticleById } from "./api/axios";
 import { Typography, CardContent, CardMedia, Card } from "@mui/material";
-import unsplash_lI7dlA5VBp8 from "../images/unsplash_lI7dlA5VBp8.jpg"
-import { BsArrowLeft } from "react-icons/bs";
+import unsplash_lI7dlA5VBp8 from "./images/unsplash_lI7dlA5VBp8.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function PostItem() {
   const [posts, setPosts] = useState("");
@@ -112,7 +113,7 @@ function PostItem() {
 
     </div>
     <NavLink className="goBack" to={location.state?.from ?? "/"}>
-    <BsArrowLeft />  Back to homepage
+    <FontAwesomeIcon className="iconMore back" icon={faArrowRight} /> Back to homepage 
       </NavLink>
       <Outlet />
     </div>
