@@ -9,7 +9,7 @@ import SearchBar from "./SearchBar"
 function SinglePage() {
     const [articles, setArticles] = useState([])
     const [searchResults, setSearchResults] = useState([])
-  
+
     useEffect(() => {
       getPosts().then(json => {
         setArticles(json)
@@ -21,7 +21,13 @@ function SinglePage() {
   
     return (
       <div className='container_post'>
+
+
         <SearchBar articles={articles} setSearchResults={setSearchResults} />
+
+
+
+
         <ListPage searchResults={searchResults} />
       </div>
     )

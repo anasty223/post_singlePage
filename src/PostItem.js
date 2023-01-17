@@ -107,14 +107,16 @@ function PostItem() {
 
       
 
-
-      </Card>
-
-
-    </div>
-    <NavLink className="goBack" to={location.state?.from ?? "/"}>
+      <NavLink className="goBack" to={location.state?.from ?? "/"}>
     <FontAwesomeIcon className="iconMore back" icon={faArrowRight} /> Back to homepage 
       </NavLink>
+      </Card>
+
+      <NavLink className="goBack" to={location.state?.from ?? "/"}>
+    <FontAwesomeIcon className="iconMore back" icon={faArrowRight} /> Back to homepage 
+      </NavLink>
+    </div>
+   
       <Outlet />
     </div>
   );

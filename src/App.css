@@ -92,8 +92,22 @@
   grid-template-columns: repeat(3, 400px);
   gap:27px;
   justify-content: center;
+  border-top: 1px solid #EAEAEA;
+  padding: 0%;
+  margin: 0%;
+padding-top:45px ;
+
+}
+.results{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
 
 
+margin-left: 15px;
+color: #363636;
 }
 .card{
   max-width: 400px;
@@ -166,7 +180,7 @@ text-decoration: none;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
-
+height:auto;
 color: #000000;
 width: 1140px;
 
@@ -184,7 +198,7 @@ width: 1140px;
 
 .goBack{
   position: absolute;
-  bottom: -330px;
+  bottom: -540px;
   left: 240px;
   font-family: 'Montserrat';
 font-style: normal;

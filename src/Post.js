@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Typography,CardContent,CardMedia,Card, TextField} from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import { faArrowRight,faCalendarWeek } from '@fortawesome/free-solid-svg-icons'
-import akarIcon from './images/akarIcons.svg'
+
 
 const Post = ({ article }) => {
 
 
     return (
         <article className='article'>
+
            <Card className="card">
       <CardMedia
         className="card-media"

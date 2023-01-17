@@ -7,8 +7,9 @@ const ListPage = ({ searchResults }) => {
 
     const content = results?.length ? results : <article><p>No Matching Posts</p></article>
 
-    return (
-        <main className="list">{content}</main>
+    return (<>
+   <h3 className="results">Results: {results.length}</h3>
+        <main className="list">{content}</main></>
     )
 }
 export default ListPage

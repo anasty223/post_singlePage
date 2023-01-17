@@ -19,6 +19,7 @@ const SearchBar = ({ articles, setSearchResults }) => {
 
   return (
     <header>
+      
       <form onSubmit={handleSubmit}>
         <div >
 
