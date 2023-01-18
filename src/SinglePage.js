@@ -21,15 +21,8 @@ function SinglePage() {
   
     return (
       <div className='container_post'>
-
-
         <SearchBar articles={articles} setSearchResults={setSearchResults} searchResults={searchResults}/>
-
-
-
-
-    
-      </div>
+     </div>
     )
   }
   export default SinglePage;

@@ -98,9 +98,7 @@
 padding-top:45px ;
 padding-bottom: 63px;
 }
-/* .article{
-  padding-bottom: 50px;
-} */
+
 .results{
   font-family: 'Montserrat';
 font-style: normal;
@@ -182,6 +180,7 @@ line-height: 29px;
 margin-top: 35px;
 color: #363636;
 text-decoration: none;
+text-align: center;
 }
 .postSummary{
   font-family: 'Montserrat';
@@ -197,6 +196,7 @@ width: 1140px;
 .container{
   display: flex;
   flex-direction: column;
+  height: 1001px;
 }
 .post-container{
   position: relative;
@@ -206,8 +206,8 @@ width: 1140px;
 
 .goBack{
   position: absolute;
-  bottom: -540px;
-  left: 240px;
+  bottom: -580px;
+  left: 180px;
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -217,6 +217,7 @@ color: #363636;
 text-decoration: none;
 display: flex;
 align-items: center;
+
 }
 .iconCalendar{
   margin-right: 10px;
