@@ -23,12 +23,12 @@ function SinglePage() {
       <div className='container_post'>
 
 
-        <SearchBar articles={articles} setSearchResults={setSearchResults} />
+        <SearchBar articles={articles} setSearchResults={setSearchResults} searchResults={searchResults}/>
 
 
 
 
-        <ListPage searchResults={searchResults} />
+    
       </div>
     )
   }

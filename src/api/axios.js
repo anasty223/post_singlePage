@@ -6,7 +6,7 @@ export const api = axios.create({
 })
 
 export const getPosts = async () => {
-    const response = await api.get('/articles')
+    const response = await api.get('/articles?_limit=6')
     return response.data
 }
 

@@ -11,7 +11,7 @@ const Post = ({ article }) => {
     return (
         <article className='article'>
 
-           <Card className="card">
+     <Card className="card">
       <CardMedia
         className="card-media"
         image={article.imageUrl}
@@ -29,7 +29,7 @@ const Post = ({ article }) => {
         {article.title}
         </Typography>
 
-        <Typography style={{marginTop:20}} className="summary" variant="body2"  component="p">
+        <Typography style={{marginTop:20,marginBottom:25}} className="summary" variant="body2"  component="p">
           {article.summary}
         </Typography>
 
@@ -42,7 +42,7 @@ const Post = ({ article }) => {
 
 
     </Card>
-            
+ 
         </article>
     )
 }

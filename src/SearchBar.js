@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { TextField } from "@mui/material";
+import ListPage from "./ListPage";
 
-const SearchBar = ({ articles, setSearchResults }) => {
+
+const SearchBar = ({ articles, setSearchResults,searchResults }) => {
   const handleSubmit = (e) => e.preventDefault();
 
   const handleSearchChange = (e) => {
@@ -17,12 +19,10 @@ const SearchBar = ({ articles, setSearchResults }) => {
     setSearchResults(resultsArray);
   };
 
-  return (
+  return (<>
     <header>
-      
       <form onSubmit={handleSubmit}>
         <div >
-
           <label className="search" htmlFor="search">
             <FontAwesomeIcon  className="inputIcon" icon={faMagnifyingGlass} />
             Filter by keywords
@@ -44,12 +44,14 @@ const SearchBar = ({ articles, setSearchResults }) => {
     }
   }}
             />
-
+ 
           </label>
-
+ 
         </div>
       </form>
     </header>
+ <ListPage searchResults={searchResults} handleSearchChange={handleSearchChange}/>
+    </>
   );
 };
 export default SearchBar;
