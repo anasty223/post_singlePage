@@ -96,8 +96,11 @@
   padding: 0%;
   margin: 0%;
 padding-top:45px ;
-
+padding-bottom: 63px;
 }
+/* .article{
+  padding-bottom: 50px;
+} */
 .results{
   font-family: 'Montserrat';
 font-style: normal;
@@ -114,8 +117,12 @@ color: #363636;
 max-height:530px ;
  max-block-size: 400px;
 min-block-size: 530px;
+box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+border-radius: 5px;
 
-
+}
+.containerTypografy{
+  height:235px;
 }
 .card-media{
   height: 217px;
@@ -132,8 +139,7 @@ min-block-size: 530px;
       -webkit-box-orient: vertical;
       line-clamp: 3;
       box-orient: vertical;
-/* height: 96px; */
-margin-bottom: 25px;
+ margin-bottom: 25px;
 
 }
 .date{
@@ -155,6 +161,7 @@ color: #363636;
 }
 
 .title{
+
   overflow: hidden;
   text-overflow: ellipsis;
   display: -moz-box;
@@ -232,7 +239,7 @@ background: #FFFFFF;
 border: 1px solid #EAEAEA;
 box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
 border-radius: 5px;
-text-align: center;
+/* text-align: center; */
 }
 
 .search{

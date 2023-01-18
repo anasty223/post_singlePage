@@ -43,10 +43,11 @@ function PostItem() {
       </Typography>
       <Typography className="postSummary"
       sx={{ mt: '5rem' }} 
-      style={{color:"#000000"}}
+      style={{color:"#000000",      textAlign:"start"}}
         variant="body2"
         color="textSecondary"
         component="p"
+  
       >
         {posts.summary}
       </Typography>

@@ -20,7 +20,7 @@ const Post = ({ article }) => {
       <CardContent>
        
 
-        <Typography className='date' color="#363636"   >
+       <div className='containerTypografy'> <Typography className='date' color="#363636"   >
         <FontAwesomeIcon icon={faCalendarWeek} opacity="0.6" color="#363636"  className='iconCalendar'/>
         {article.publishedAt.split('T')[0]}
         </Typography>
@@ -33,7 +33,7 @@ const Post = ({ article }) => {
           {article.summary}
         </Typography>
 
-
+        </div>
         <NavLink to={`/article/${article.id}`}className="more" style={{textDecoration:"none",color:"#363636",marginBottom:25}}>Read more 
       
       <FontAwesomeIcon className="iconMore" icon={faArrowRight} />
